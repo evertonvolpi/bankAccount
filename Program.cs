@@ -112,7 +112,7 @@ namespace bankAccount
                     }
 
                     account.balance = atualBalance;
-                    Console.WriteLine("After {0} months, {1}'s account (#{2}), has a balance of $ {3}. Actual balance: $ {4}.", months, account.customerName, accountNumber, Math.Round((simulatedBalance), 2), account.balance);
+                    Console.WriteLine("After {0} months, {1}'s account (#{2}), has a balance of $ {3:F2}. Actual balance: $ {4}.", months, account.customerName, accountNumber, simulatedBalance, account.balance);
                 }
             }
         }
